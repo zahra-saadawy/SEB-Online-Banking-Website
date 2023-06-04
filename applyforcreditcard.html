@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="applyforloanstyle.css" />
+    <script src="applyforcreditScript.js" defer></script>
+    <title>apply for card Form</title>
+  <style>
+    select{
+    color: #2c3477;
+    padding: 6px;
+    width:100%;
+    border-radius: 5px;
+}
+
+  </style>
+  </head>
+  <body>
+<!--nav bar start-->
+
+<div class="nav">
+  <div class="container">
+   <div class="nav-logo">
+       <img src="images/logo-removebg-preview.png" alt="logo">
+   </div>
+   <div class="nav-links">
+       <ul>
+           <li><a href="client.html">Home</a></li>
+           <li><a href="Notifications.html">Notifications</a></li>
+          
+           <li><a href="index.html">Sign Out
+
+           </a></li>
+
+       </ul>
+
+   </div>
+   <div class="clr"></div>
+  </div>
+
+</div>
+  
+<!--end  nav bar-->  
+
+<div class="progressbar">
+    <div class="progress" id="progress"></div>
+    
+    <div
+      class="progress-step progress-step-active"
+      data-title="Personal Information"
+    ></div>
+    <div class="progress-step" data-title="Additional Details"></div>
+    <div class="progress-step" data-title="Employment and Financial Information"></div>
+    <div class="progress-step" data-title="Credit History"></div>
+
+    <!-- <div class="progress-step" data-title="Consent and Authorization"></div> -->
+  </div>
+
+<form action="#" class="form" id="myForm">
+    <h1>Card Application</h1>
+  <!-- Progress bar -->
+ <!-- Steps -->
+<!--first form custmer info start-->
+      <div class="form-step form-step-active">
+        <div class="form-group">
+            <label for="full-name"  class="label-title">Full Name *</label>
+            <input type="text" id="full-name"   placeholder="enter your full name"required="required" >
+        </div>
+        <div class="form-group">
+            <label for="ssn">Social Security Number *</label>
+            <input type="text" id="ssn" name="ssn" placeholder="enter your SSN" required>
+        </div>
+
+       <div class="form-group">
+        <label for="MobileNumber" class="label-title">Mobile Number *</label>
+        <input type="tel" id="MobileNumber"  class="form-input" placeholder="enter your Mobile Number" name="phone" pattern="[+]{1}[0-9]{11,14}" required="required">
+     </div>
+     <div class="form-group">
+        <label for="email" class="label-title">Email *</label>
+        <input type="email" id="email" class="form-input" placeholder="enter your email" required="required" />
+        </div>
+
+        <div class="form-group">
+            <label for="purpose"  class="label-title">Request Purpose *</label>
+            <input type="text" id="purpose"  placeholder="enter Request Purpose"required="required" >
+        </div>
+        <div class="btns-group">
+            <a href="#" class="btn btn-prev">Previous</a>
+            <a href="#" class="btn btn-next">Next</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="form-step">
+            <div class="form-group">
+
+        <label for="citizenship">Citizenship Status *</label>
+        <select id="citizenship" name="citizenship" required>
+          <option value="">Select Citizenship Status</option>
+          <option value="citizen">Citizen</option>
+          <option value="permanent-resident">Permanent Resident</option>
+          <option value="visa-holder">Visa Holder</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="residential-status">Residential Status *</label>
+        <select id="residential-status" name="residential-status" required>
+          <option value="">Select Residential Status</option>
+          <option value="own">Own</option>
+          <option value="rent">Rent</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="marital-status">Marital Status *</label>
+        <select id="marital-status" name="marital-status" required>
+          <option value="">Select Marital Status</option>
+          <option value="single">Single</option>
+          <option value="married">Married</option>
+          <option value="divorced">Divorced</option>
+          <option value="widowed">Widowed</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="dependents">Number of Dependents *</label>
+        <input type="number" id="dependents" name="dependents" min="0" required>
+     </div>
+     <div class="btns-group">
+        <a href="#" class="btn btn-prev">Previous</a>
+        <a href="#" class="btn btn-next">Next</a>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="form-step">
+        <div class="form-group">
+    <label for="employment-status">Employment Status *</label>
+    <select id="employment-status" name="employment-status" required>
+      <option value="">Select Employment Status</option>
+      <option value="employed">Employed</option>
+      <option value="self-employed">Self-Employed</option>
+      <option value="unemployed">Unemployed</option>
+      <option value="student">Student</option>
+      <option value="retired">Retired</option>
+    </select>
+        </div>
+        <div class="form-group">
+    <label for="employer-name">Employer's Name *</label>
+    <input type="text" id="employer-name" name="employer-name" required>
+        </div>
+    <div class="form-group">
+    <label for="annual-income">Annual Income (EGY) *</label>
+    <input type="number" id="annual-income" name="annual-income" min="0" required>
+  </div>
+  <div class="form-group">
+    <label for="monthly-payment">Monthly Housing Payment (EGY) *</label>
+    <input type="number" id="monthly-payment" name="monthly-payment" min="0" required>
+  </div>
+  <div class="form-group">
+    <label for="bank-account">Bank Account Information *</label>
+    <input type="text" id="bank-account" name="bank-account">
+    </div>
+    <div class="btns-group">
+        <a href="#" class="btn btn-prev">Previous</a>
+        <a href="#" class="btn btn-next">Next</a>
+      </div>
+    </div>
+
+
+
+        <div class="form-step">
+            <div class="form-group">
+        <label for="credit-score">Credit Score *</label>
+  <input type="number" id="credit-score" name="credit-score" min="300" max="850" required>
+            </div>
+            <div class="form-group">
+  <label for="credit-limit">Current Credit Limit *</label>
+  <input type="number" id="credit-limit" name="credit-limit" min="0" required>
+            </div>
+            <div class="form-group">
+  <label for="credit-cards">Number of Credit Cards *</label>
+  <input type="number" id="credit-cards" name="credit-cards" min="0" required>
+            </div>
+            <div class="form-group">
+  <label for="loan">Existing Loans *</label>
+  <input type="text" id="loan" name="loan" required>
+</div>
+<div class="form-group">
+  <label for="late-payments">Late Payments in the Last 12 Months *</label>
+  <input type="number" id="late-payments" name="late-payments" min="0" required>
+</div>
+<div class="btns-group">
+    <a href="#" class="btn btn-prev">Previous</a>
+    <input type="submit" value="Submit" class="btn" />
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</form>    
+
+  <!-- popup -->
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="popup">
+    <img src="images/right.png" class="rightphoto" alt="mshl2iha">
+    <h2>Thank you!</h2>
+    <p>Your details have been submitted successfully.</p>
+    <a href="client.html" id="popupbtn">HOME</a>
+  
+  </div>
+
+<!-- 
+footer -->
+<div class="seventh">
+  <p> Copyright 2017. All rights reserved.</p>
+  <div class="icons">
+      <img class="img" src="images/Icons/facebook.png" alt="facebook icon">
+      <img class="img" src="images/Icons/google.png" alt="google icon">
+      <img class="img" src="images/Icons/linkedin.png" alt="linkedin icon">
+      <img class="img" src="images/Icons/twitter.png" alt="twitter icon">
+  </div>
+  </div>
+  </body>
+</html>

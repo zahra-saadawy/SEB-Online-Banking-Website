@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="registerStyle.css" />
+    <script src="registerScript.js" defer></script>
+    <title>Registraion Form</title>
+  </head>
+<body>
+    <!--nav bar start-->
+<div class="nav">
+  <div class="containerr">
+   <div class="nav-logo">
+       <img src="images/logo-removebg-preview.png" alt="logo">
+   </div>
+   <div class="nav-links">
+       <ul>
+           <li><a href="index.html">Home</a></li>
+           
+           <li><a href="login.html">Sign In</a></li>
+
+       </ul>
+
+   </div>
+   <div class="clr"></div>
+  </div>
+
+</div>
+
+  
+<!--end  nav bar--> 
+    <!-- /*username, password confirm password*/ -->
+<div class="container" >
+    <div class="left" id="notforget">
+      <div class="header">
+        <h2 class="animation a1">Registeration</h2>
+        <h4 class="animation a2">register using username and password</h4>
+      </div>
+      <div class="form" >
+        <input type="text" id="username" class="form-field animation a3" placeholder="Create username ">
+        <input type="password"id="newPassword" class="form-field animation a4" placeholder="Create Password">
+        <input type="password"id="confirmPassword" class="form-field animation a4" placeholder="Confirm Password">
+        <p class="animation a5"></p>
+        <button href="#" type="submit" onclick="submitForm(document.getElementById('username').value, document.getElementById('newPassword').value)" id="loginbtn" class="animation a6">REGISTER</button>
+      </div>
+   </div>
+    <div class="right"></div>
+  </div>
+  <div class="seventh">
+    <!-- <img id="logo" src="images/logo-removebg-preview.png" alt="logo"> -->
+    <p> Copyright 2017. All rights reserved.</p>
+    <div class="icons">
+        <img class="img" src="images/Icons/facebook.png" alt="facebook icon">
+        <img class="img" src="images/Icons/google.png" alt="google icon">
+        <img class="img" src="images/Icons/linkedin.png" alt="linkedin icon">
+        <img class="img" src="images/Icons/twitter.png" alt="twitter icon">
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Credit Card Bill</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      
+      h1 {
+        text-align: center;
+        color:#2c3477;
+
+      }
+      
+      .bill-container {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      
+      .bill {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      
+      .bill p {
+        margin: 0;
+        color:#2c3477;
+      }
+      
+      .bill .payee {
+        font-weight: bold;
+      }
+      
+      .bill .amount {
+        color: #ff0000;
+      }
+      
+      .bill .due-date {
+        color: #666;
+        color:#2c3477;
+      }
+      
+      #paymentForm {
+        max-width: 400px;
+        margin: 20px auto;
+      }
+      
+      #paymentForm h2 {
+        margin-top: 0;
+        color:#2c3477;
+      }
+      
+      #paymentForm label {
+        display: block;
+        margin-bottom: 5px;
+        color:#2c3477;
+      }
+      
+      #paymentForm input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+      }
+      
+      #paymentForm button {
+
+        padding: 10px 50px;
+        color: white;
+        background-color: #2c3477;
+        margin-left: 30%;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      @import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
+body {
+ background-color: #dcdcdc;
+    /* background: linear-gradient(to right, #78a7ba 0%, #385d6c 50%, #78a7ba 99%); */
+    /* background: linear-gradient(to right, #de48b5 0%,#1c1f78 100%);  */
+    /* background: linear-gradient(to right, #dadcde 0%,#1c1f78 100%); */
+    background-image: url("images/Home\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+:root {
+    --primary-color: #2c3477;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 0%;
+    min-height: 100vh;
+  }
+
+
+ /*navbar*/
+ .nav{
+    transition: background-color 0.3s ease-in-out; 
+    position: fixed;
+       top: 0;
+       width: 100%;
+       z-index: 999; 
+   
+}
+
+.nav.scrolled {
+ background-color: white; 
+ color: #2c3477;
+}
+.nav-logo
+{
+   width: 13%;
+   float: left;
+   margin-top: 10px;
+  
+}
+.nav-logo img
+{
+   width: 100%;
+}
+body.scrolled .nav {
+   background-color: white;
+  
+ }
+ .nav-links ul li a.scrolled {
+   color: #2c3477; /* Color for list elements when scrolled */
+}
+.nav-links ul
+{
+   float: right;
+   margin-top: 10px;
+}
+.nav-links ul li
+{
+   list-style-type: none;
+   float: left;
+   padding: 15px;
+}
+.nav-links ul li :hover
+{
+   
+   text-decoration: underline;
+}
+.nav-links ul li a
+{
+   color: white;
+   text-decoration: none;
+}
+.clr
+{
+   clear: both;
+}
+.container
+{
+   width: 90%;
+   margin: auto;
+}
+  .seventh{
+    background-position: center center;
+    background-size: 100%;
+    height: fit-content;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    color: rgb(150, 150, 150);
+    background-color: #22285f;
+    position: relative;
+    top:80px;
+    
+  }
+  .seventh .img{
+    width:  35px;
+    border: 1px solid transparent ;
+    background-color: #2c3477;
+    border-radius: 17.5px;
+    text-align: center;
+    margin-bottom: 30px;
+   }
+   .seventh p{
+    color: rgb(119, 119, 119);
+    font-size :15px;
+    font-weight: 400;
+    line-height :27.9px;
+    text-align: center;
+    padding-top: 20px;
+    margin:0;
+   }
+   #logo{
+    width: 364px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+   }
+   .icons{
+  
+    margin-top: 10px;
+    /* padding-bottom: 30px; */
+   }
+   body{
+   font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   margin: 0;
+   display: grid;
+   place-items: center;
+   min-height: 100vh;
+   }
+  h1 {
+  
+    text-align: center;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    background-color: #2c3477;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .con{
+    margin-top:200px;
+    background-color: white;
+    width: 40%;
+    border-radius: 20px;
+  }
+    /*popup*/
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border: 1px solid black;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+        border-radius: 5px;
+        height: 250px;
+      }
+      .popup h2{
+      left: 30%;
+      position: relative;
+      font-weight: bolder;
+      }
+      .popup p{
+          margin-bottom: 60px;
+      }
+    
+      /* Styling for the overlay */
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9998;
+      }
+      .rightphoto{
+          width: 80px;
+          position: absolute;
+          top: -40px;
+          right: 40%;
+      }
+    
+      #popupbtn{
+          text-decoration: none;
+          color: white;
+          background-color: green;
+          padding: 10px 80px;
+          border-radius: 4px;
+          /* margin-top: 60px; */
+          /* margin-bottom: 20px; */
+          margin-left: 15%;
+      }
+ 
+      
+  </style>
+</head>
+<body>
+
+    <!--nav bar start-->
+
+    <div class="nav">
+      <div class="container">
+       <div class="nav-logo">
+           <img src="images/logo-removebg-preview.png" alt="logo">
+       </div>
+       <div class="nav-links">
+           <ul>
+               <li><a href="client.html">Home</a></li>
+               <li><a href="Notifications.html">Notifications</a></li>
+              
+               <li><a href="index.html">Sign Out
+
+               </a></li>
+
+           </ul>
+
+       </div>
+       <div class="clr"></div>
+      </div>
+
+   </div>
+    
+  <!--end  nav bar-->  
+  <div class="con">
+  <h1>Credit Card Bill</h1>
+
+  <div id="billContainer"></div>
+  <div id="paymentForm">
+    <h2>Make a Payment</h2>
+    <label for="paymentAmount">Payment Amount:</label>
+    <input type="number" id="paymentAmount" required>
+    <button onclick="makePayment()">Pay</button>
+  </div>
+</div>
+ <!-- popup -->
+ <div class="overlay" id="overlay"></div>
+ <div class="popup" id="popup">
+   <img src="images/right.png" class="rightphoto" alt="mshl2iha">
+   <h2>Thank you!</h2>
+   <p>Your details have been submitted successfully.</p>
+   <a href="client.html" id="popupbtn">HOME</a>
+ 
+ </div>
+<!-- 
+footer -->
+<div class="seventh">
+    <p> Copyright 2017. All rights reserved.</p>
+    <div class="icons">
+        <img class="img" src="images/Icons/facebook.png" alt="facebook icon">
+        <img class="img" src="images/Icons/google.png" alt="google icon">
+        <img class="img" src="images/Icons/linkedin.png" alt="linkedin icon">
+        <img class="img" src="images/Icons/twitter.png" alt="twitter icon">
+    </div>
+    </div>
+
+  <script >
+    // Sample credit card bill object (replace with your own data)
+// Sample credit card bill object (replace with your own data)
+const creditCardBill = {
+    cardNumber: '**** **** **** 1234',
+    totalAmount: 500,
+    minimumPayment: 25,
+    dueDate: '2023-06-15',
+  };
+  
+  // Access the billContainer element
+  const billContainer = document.getElementById('billContainer');
+  
+  // Generate HTML for the credit card bill
+  const billHTML = `
+    <div class="bill-container">
+      <div class="bill">
+        <p class="payee">Card Number: ${creditCardBill.cardNumber}</p>
+        <p class="amount">Total Amount Due: $${creditCardBill.totalAmount}</p>
+        <p class="amount">Minimum Payment: $${creditCardBill.minimumPayment}</p>
+        <p class="due-date">Due Date: ${creditCardBill.dueDate}</p>
+      </div>
+    </div>
+  `;
+  
+  // Insert the HTML into the billContainer element
+  billContainer.innerHTML = billHTML;
+  
+  // Function to handle the payment
+  function makePayment() {
+    const paymentAmount = document.getElementById('paymentAmount').value;
+  
+    // Perform any necessary validation on the payment amount
+    if (paymentAmount <25) {
+      alert('Invalid payment amount');
+      return;
+    }
+  
+    // Perform the payment process here
+    // Replace this with your own logic
+    showPopup();
+    // Example: Show a success message
+   // alert(`Payment of $${paymentAmount} successfully made!`);
+  
+    // Clear the payment form input
+    document.getElementById('paymentAmount').value = '';
+  }
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener("scroll", function() {
+      var navLinks = document.querySelectorAll(".nav-links ul li a");
+      for (var i = 0; i < navLinks.length; i++) {
+        navLinks[i].classList.toggle("scrolled", window.scrollY > 0);
+      }
+    });
+  
+    window.addEventListener("scroll", function() {
+      var nav = document.querySelector(".nav");
+      nav.classList.toggle("scrolled", window.scrollY > 0);
+    });
+  
+    var slideCount = document.querySelectorAll(".slide").length; // Total number of slides
+    var visibleSlides = 4; // Number of slides visible at a time
+    var slideWidth = document.querySelector(".slide").offsetWidth; // Width of a single slide including margin
+    var containerWidth = visibleSlides * slideWidth; // Total width of visible slides
+    var currentPosition = 0; // Current position of the slide container
+  
+    document.querySelector(".slides").style.width = containerWidth + "px"; });
+
+
+    var form = document.getElementById('myForm');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent form submission
+  
+      // Display the popup
+      showPopup();
+    });
+  
+    function showPopup() {
+      var popup = document.getElementById('popup');
+      var overlay = document.getElementById('overlay');
+  
+      popup.style.display = 'block';
+      overlay.style.display = 'block';
+    }
+  
+    function hidePopup() {
+      var popup = document.getElementById('popup');
+      var overlay = document.getElementById('overlay');
+  
+      popup.style.display = 'none';
+      overlay.style.display = 'none';
+    }
+  </script>
+</body>
+</html>

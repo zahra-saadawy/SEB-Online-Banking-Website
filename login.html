@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="loginStyle.css" />
+    <script src="loginScript.js" defer></script>
+    <title>login</title>
+  </head>
+<body>
+  <!--nav bar start-->
+<div class="nav">
+  <div class="containerr">
+   <div class="nav-logo">
+       <img src="images/logo-removebg-preview.png" alt="logo">
+   </div>
+   <div class="nav-links">
+       <ul>
+           <li><a href="index.html">Home</a></li>
+           
+           <li><a href="Register.html">Sign Up</a></li>
+           
+
+       </ul>
+
+   </div>
+   <div class="clr"></div>
+  </div>
+
+</div>
+
+  
+<!--end  nav bar-->  
+<div class="container" >
+    <div class="left" id="notforget">
+      <div class="header">
+        <h2 class="animation a1">Welcome Back</h2>
+        <h4 class="animation a2">Log in to your account using username and password</h4>
+      </div>
+      <div class="form" >
+        <input type="text" id="username" class="form-field animation a3" placeholder="Username ">
+        <input type="password"id="password" class="form-field animation a4" placeholder="Password">
+        <p class="animation a5"><a onclick="changeForm()"href="#">Forgot Password</a></p>
+        <button href="#" type="submit" onclick="login(document.getElementById('username').value, document.getElementById('password').value)" id="loginbtn" class="animation a6">LOGIN</button>
+      </div>
+   </div>
+
+    <div class="left" id="forget">
+      <div class="header">
+        <h2 class="animation a1">Change Password</h2>
+        <h4 class="animation a2"></h4>
+      </div>
+    <div class="form" >
+        <input type="text" id="usernamee" class="form-field animation a3" placeholder="Username ">
+        <input type="password"id="newPassword" class="form-field animation a4" placeholder="Password">
+        <input type="password"id="confirmPassword" class="form-field animation a4" placeholder="Confirm password">
+        <p class="animation a5"></p>
+        <button href="#" type="submit" onclick="submitForm( document.getElementById('usernamee').value, document.getElementById('newPassword').value)" id="loginbtn" class="animation a6">SET PASSWORD</button>
+      </div>
+      </div>
+    <div class="right"></div>
+  </div>
+  <div class="seventh">
+    <!-- <img id="logo" src="images/logo-removebg-preview.png" alt="logo"> -->
+    <p> Copyright 2017. All rights reserved.</p>
+    <div class="icons">
+        <img class="img" src="images/Icons/facebook.png" alt="facebook icon">
+        <img class="img" src="images/Icons/google.png" alt="google icon">
+        <img class="img" src="images/Icons/linkedin.png" alt="linkedin icon">
+        <img class="img" src="images/Icons/twitter.png" alt="twitter icon">
+    </div>
+    </div>
+</body>
+</html>

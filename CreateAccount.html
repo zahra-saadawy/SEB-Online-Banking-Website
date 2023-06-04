@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="CreateAccountStyle.css" />
+    <script src="CreateAccountScript.js" defer></script>
+    <title>create account Form</title>
+  </head>
+  <body>
+<!--nav bar start-->
+<div class="nav">
+  <div class="container">
+   <div class="nav-logo">
+       <img src="images/logo-removebg-preview.png" alt="logo">
+   </div>
+   <div class="nav-links">
+       <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="Register.html">Sign Up</a></li>
+          
+           <li><a href="login.html">Sign In
+
+           </a></li>
+
+       </ul>
+
+   </div>
+   <div class="clr"></div>
+  </div>
+
+</div>
+
+  
+<!--end  nav bar-->  
+    <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        
+        <div
+          class="progress-step progress-step-active"
+          data-title="Customer Information"
+        ></div>
+        <div class="progress-step" data-title="Business Information"></div>
+        <div class="progress-step" data-title="Proof of identity"></div>
+        <div class="progress-step" data-title="Terms and Conditions"></div>
+      </div>
+
+    <form action="#" class="form" id="myForm">
+        <h1>Create Account</h1>
+      <!-- Progress bar -->
+     
+
+      <!-- Steps -->
+<!--first form custmer info start-->
+          <div class="form-step form-step-active">
+            <div class="form-group" >
+            <label for="firstname" class="label-title">First name *</label>
+            <input type="text" id="firstname" class="form-input" placeholder="enter your first name" required="required" />
+            <span id="error-message" style="color: red;"></span>
+           </div>
+
+        <div class="form-group">
+            <label for="lastname" class="label-title">Last name *</label>
+            <input type="text" id="lastname" class="form-input" placeholder="enter your last name" required="required" />
+        </div>
+            <div class="form-group">
+            <label for="birthday" class="label-title">Birthday *</label>
+            <input type="date" id="birthday" placeholder="enter your Birthday"  required="required" name="birthday">
+        </div>
+           <div class="form-group">
+            <label for="email" class="label-title">Email *</label>
+            <input type="email" id="email" class="form-input" placeholder="enter your email" required="required" />
+            </div>
+        <div class="form-group">
+            <label for="MobileNumber" class="label-title">Mobile Number *</label>
+            <input type="tel" id="MobileNumber"  class="form-input" placeholder="enter your Mobile Number" name="phone" pattern="[+]{1}[0-9]{11,14}" required="required">
+         </div>
+         <div class="form-group">
+            <label for="address" class="label-title">Address *</label>
+            <input type="text" id="address" class="form-input" placeholder="enter your Address" required="required" />
+        </div>
+
+     
+
+        <div class="">
+            <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+          </div>
+        </div>
+<!--first form custmer info end-->   
+<!--start Buisness Information-->       
+      <div class="form-step">
+        
+        <div id="occupationContainer">
+        <label for="selectedOption" class="label-title">Occupation *</label>
+        <input type="text" list="options" name="selectedOption" required="required" placeholder="Select Employment Status">
+        <datalist id="options">
+            <option value="employed">Employed</option>
+            <option value="selfEmployed">Self-employed</option>
+            <option value="unemployed">Unemployed</option>
+        </datalist>
+        <div id="employerNameContainer">
+            <label for="employerName">Employer Name *</label>
+            <input type="text" name="employerName" id="employerName"placeholder="enter your Employer name">
+            </div>
+        </div>
+   
+ 
+
+
+        <div class="form-group">
+            <div class="incomediv">
+            <label for="income-range">Monthly Income Range *</label>
+            <input type="range" id="income-range" name="income" min="0" max="10000" step="100" value="5000" required="required">
+            <span id="income-value">$5000</span>
+            </div>
+        </div>
+        <div class="btns-group">
+        <a href="#" class="btn btn-prev">Previous</a>
+        <a href="#" class="btn btn-next">Next</a>
+        </div>
+        </div>
+<!--end Buisness Information-->         
+      <div class="form-step">
+        <div class="form-group">
+            <label for="ssn">Social Security Number *</label>
+            <input type="text" id="ssn" name="ssn" placeholder="enter your SSN" required>
+        </div>
+        <div class="form-group">
+            <label for="identification">National ID *</label>
+            <input type="file" id="identification" name="identification" accept=".pdf,.jpg,.jpeg,.png" required>
+        </div>
+        <div class="form-group">
+            <label for="proofOfAddress">Proof of Address *</label>
+            <input type="file" id="proofOfAddress" name="proofOfAddress" accept=".pdf,.jpg,.jpeg,.png" required>
+        </div>
+        <div class="form-group">
+            <label for="taxNumber">Tax Identification Number *</label>
+            <input type="text" id="taxNumber" name="taxNumber"placeholder="enter your Tax Number" required>
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="form-group">
+            <label for="signature">signature *</label>
+         <div id="signatureContainer">
+    <canvas id="signatureCanvas"></canvas>
+    <!-- <a href="#" id="clearButton">Clear</a>
+    <a href="#" id="saveButton">Save </a> -->
+    <a href="#" id="clearButton"><i class="fas fa-trash"></i> Clear</a>
+<a href="#" id="saveButton"><i class="fas fa-save"></i> Save</a>
+   </div> 
+        </div>
+        <div class="form-group">
+            <div class="terms-container">
+                <label>
+                  <input type="checkbox" name="terms" id="termsCheckbox" required>
+                  <span class="checkmark"></span>
+                  I agree to the <a href="#">Terms and Conditions</a>
+                </label>
+              </div>
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <input type="submit" value="Submit" class="btn" />
+        </div>
+      </div>
+    </form>
+    <div class="seventh">
+      <!-- <img id="logo" src="images/logo-removebg-preview.png" alt="logo"> -->
+      <p> Copyright 2017. All rights reserved.</p>
+      <div class="icons">
+          <img class="img" src="images/Icons/facebook.png" alt="facebook icon">
+          <img class="img" src="images/Icons/google.png" alt="google icon">
+          <img class="img" src="images/Icons/linkedin.png" alt="linkedin icon">
+          <img class="img" src="images/Icons/twitter.png" alt="twitter icon">
+      </div>
+      </div>
+      <!-- popup -->
+      <div class="overlay" id="overlay"></div>
+      <div class="popup" id="popup">
+        <img src="images/right.png" class="rightphoto" alt="mshl2iha">
+        <h2>Thank you!</h2>
+        <p>Your details have been submitted successfully.</p>
+        <a href="client.html" id="popupbtn">HOME</a>
+      
+      </div>
+
+  </body>
+</html>

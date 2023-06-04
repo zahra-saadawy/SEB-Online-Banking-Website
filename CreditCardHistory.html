@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="CreditCardHistory.css" />
+  <script src="CreditCardHistory.js" defer></script>
+  <title>Credit Card History</title>
+</head>
+<body>
+  
+  
+  <div class="nav">
+    <div class="container1">
+     <div class="nav-logo">
+         <img src="images/logo-removebg-preview.png" alt="logo">
+     </div>
+     <div class="nav-links">
+         <ul>
+             <li><a href="client.html">Home</a></li>
+             <li><a href="Notifications.html">Notifications</a></li>
+            
+             <li><a href="index.html">Sign Out
+
+             </a></li>
+
+         </ul>
+
+     </div>
+     <div class="clr"></div>
+    </div>
+
+ </div>
+  <div class="container">
+    <h1>Credit Card Transactions</h1>
+    
+  <div class="Yasmin">
+    <label for="card-select">Please select the card:</label>
+    <input list="cards" id="card-select" name="card-select" />
+    <datalist id="cards">
+      <option value="1345*****6578" />
+      <option value="2245*****9998" />
+      <option value="3333*****5678" />
+    </datalist>
+</div>
+
+    <table id="transaction-table" style="display: none;">
+      <thead>
+        <tr>
+          <th>Transaction Date</th>
+          <th>Posting Date</th>
+          <th>Transaction Details</th>
+          <th>Amount</th>
+          <th>Credit</th>
+        </tr>
+      </thead>
+        <tbody>
+          <tr>
+            <td>2023-05-01</td>
+            <td>jan 23</td>
+            <td>Payment - Direct Debit</td>
+            <td>519.14</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>2023-09-01</td>
+            <td>Feb 24</td>
+            <td>Amazon</td>
+            <td>800.14</td>
+            <td>150</td>
+          </tr>
+          <tr>
+            <td>2023-05-01</td>
+            <td>jan 23</td>
+            <td>Payment - Direct Debit</td>
+            <td>63419.14</td>
+            <td>170</td>
+          </tr>
+          <tr>
+            <td>2023-05-01</td>
+            <td>jan 23</td>
+            <td>Payment - Direct Debit</td>
+            <td>519.14</td>
+            <td>110</td>
+          </tr>
+          <tr>
+            <td>2023-09-01</td>
+            <td>Dec 8</td>
+            <td>Stamp Dutyt</td>
+            <td>519.14</td>
+            <td>120</td>
+          </tr>
+          <tr>
+            <td>2023-05-01</td>
+            <td>jan 23</td>
+            <td>Payment - Direct Debit</td>
+            <td>519.14</td>
+            <td>130</td>
+          </tr>
+          <tr>
+            <td>2023-09-01</td>
+            <td>Dec 8</td>
+            <td>Stamp Dutyt</td>
+            <td>519.14</td>
+            <td>190</td>
+          </tr>
+          <tr>
+            <td>2023-05-01</td>
+            <td>jan 23</td>
+            <td>Payment - Direct Debit</td>
+            <td>519.14</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>2023-05-01</td>
+            <td>jan 23</td>
+            <td>Payment - Direct Debit</td>
+            <td>519.14</td>
+            <td>222</td>
+          </tr>
+          <tr>
+            <td>2023-05-01</td>
+            <td>Nov 23</td>
+            <td>Insurance Fee </td>
+            <td>700.14</td>
+            <td>345</td>
+          </tr>
+          <tr>
+            <td>2023-10-01</td>
+            <td>jan 23</td>
+            <td>Closing Balance</td>
+            <td>519.14</td>
+            <td>280</td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+    </div>
+    <script>
+      document.getElementById("card-select").addEventListener("change", function() {
+        var selectedCard = this.value;
+        if (selectedCard !== "") {
+          document.getElementById("transaction-table").style.display = "table";
+        } else {
+          document.getElementById("transaction-table").style.display = "none";
+        }
+      });
+    </script>
+  </body>
+  </html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="paybills.css" />
+    <script src="paybills.js" defer></script>
+    <title>pay bills</title>
+   </head>
+  <body>
+<!--nav bar start-->
+
+
+<div class="nav">
+  <div class="container">
+   <div class="nav-logo">
+       <img src="images/logo-removebg-preview.png" alt="logo">
+   </div>
+   <div class="nav-links">
+       <ul>
+           <li><a href="client.html">Home</a></li>
+           <li><a href="Notifications.html">Notifications</a></li>
+          
+           <li><a href="index.html">Sign Out
+
+           </a></li>
+
+       </ul>
+
+   </div>
+   <div class="clr"></div>
+  </div>
+
+</div>
+</div>
+ <!--end  nav bar-->  
+
+ <form id="sendMoneyForm">
+   <!-- Form elements will be added here -->
+   <label for="sender">Account Number </label>
+    <input type="text" id="sender" name="sender" required>
+  
+    <label for="telephonee" id="telephonel"> Telephone Number </label>
+    <input type="text" id="telephone" name="telephone"  >
+  
+    <label for="amount">Amount </label>
+    <input type="number" id="amount" name="amount" required>
+  
+    <input type="submit" value="Pay">
+ </form>
+
+  <div class="billslist" id="billslist">
+    <h1 class="mybills">My Bills</h1>
+  <div class="bill">
+    <div>
+    <img src="images/electricity.jpeg" alt="">
+</div>
+    <h2>Electricity Bill</h2>
+    <p>Due 2/6/2023</p>
+    <h3>300$</h3>
+    <button onclick="showPayment()">pay</button>
+  </div> 
+  <div class="bill">
+    <div>
+    <img src="images/water.jpeg" alt="">
+</div>
+    <h2>Water Bill</h2>
+    <p>Due 22/6/2023</p>
+    <h3>200$</h3>
+    <button onclick="showPayment()">pay</button>
+  </div> 
+  <div class="bill">
+    <div>
+    <img src="images/gas.jpeg" alt="">
+</div>
+    <h2>Gas Bill</h2>
+    <p>Due 1/7/2023</p>
+    <h3>50$</h3>
+    <button onclick="showPayment()">pay</button>
+  </div> 
+  <div class="bill">
+    <div>
+    <img src="images/Telephone.jpeg" alt="">
+</div>
+    <h2>Telephone Bill</h2>
+    <p>Due 3/8/2023</p>
+    <h3>100$</h3>
+    <button onclick="showPaymentt()">pay</button>
+  </div> 
+
+  </div>
+
+
+
+
+
+
+
+<!-- 
+footer -->
+<div class="seventh">
+    <p> Copyright 2017. All rights reserved.</p>
+    <div class="icons">
+        <img class="img" src="images/Icons/facebook.png" alt="facebook icon">
+        <img class="img" src="images/Icons/google.png" alt="google icon">
+        <img class="img" src="images/Icons/linkedin.png" alt="linkedin icon">
+        <img class="img" src="images/Icons/twitter.png" alt="twitter icon">
+    </div>
+    </div>
+     <!-- popup -->
+     <div class="overlay" id="overlay"></div>
+     <div class="popup" id="popup">
+       <img src="images/right.png" class="rightphoto" alt="mshl2iha">
+       <h2>Thank you!</h2>
+       <p>Your Payment has been confirmed.</p>
+       <a href="client.html" id="popupbtn">HOME</a>
+       <a href="paybills.html" id="popupbtn">My Bills</a>
+     
+     </div>
+</body>
+</html>  

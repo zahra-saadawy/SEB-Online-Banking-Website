@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Card Types</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
+    body {
+     /* background-color: #dcdcdc; */
+        /* background: linear-gradient(to right, #78a7ba 0%, #385d6c 50%, #78a7ba 99%); */
+        background-image: url("images/Home\ \(1\).png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+    }
+  
+    .card-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 200px;
+    }
+    
+    .card {
+      flex: 0 0 25%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 20px;
+      margin-bottom: 100px;
+      background-color: white;
+      border-radius: 10px;
+      height:600px;
+    }
+    
+    .card-header {
+      font-weight: bolder;
+      font-size: 20px;
+      margin-bottom: 20px;
+      margin-left: 35%;
+      color:#2c3477;
+ 
+    }
+    
+    .card-image {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .card-button {
+      background-color: #2c3477;
+      color: white;
+      border: none;
+      padding:10px  30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    /*  margin-left:27%;*/
+      border-radius: 5px;
+      position: relative;
+      
+    left: 30%;
+    bottom: -50px;
+    }
+    
+    .benefits {
+   /*   display: none;*/
+      margin-top: 10px;
+    }
+    .benefits ul{
+        list-style: circle;
+        color:#2c3477;
+        padding:30 0;
+        margin-bottom: 30px;
+        height: 50px;
+    }
+     /*navbar*/
+ .nav{
+    transition: background-color 0.3s ease-in-out; 
+    position: fixed;
+       top: 0;
+       width: 100%;
+       z-index: 999; 
+   
+  }
+  
+  .nav.scrolled {
+  background-color: white; 
+  color: #2c3477;
+  }
+  .nav-logo
+  {
+   width: 13%;
+   float: left;
+   margin-top: 10px;
+  
+  }
+  .nav-logo img
+  {
+   width: 100%;
+  }
+  body.scrolled .nav {
+   background-color: white;
+  
+  }
+  .nav-links ul li a.scrolled {
+   color: #2c3477; /* Color for list elements when scrolled */
+  }
+  .nav-links ul
+  {
+   float: right;
+   margin-top: 10px;
+  }
+  .nav-links ul li
+  {
+   list-style-type: none;
+   float: left;
+   padding: 15px;
+  }
+  .nav-links ul li :hover
+  {
+   
+   text-decoration: underline;
+  }
+  .nav-links ul li a
+  {
+   color: white;
+   text-decoration: none;
+  }
+  .clr
+  {
+   clear: both;
+  }
+  .container
+  {
+   width: 90%;
+   margin: auto;
+  }
+  nav.scrolled {
+  background-color: white;
+  color: rgb(44, 52, 119);}
+  .seventh{
+    background-position: center center;
+    background-size: 100%;
+    height: fit-content;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    color: rgb(150, 150, 150);
+    background-color: #22285f;
+    
+  }
+  .seventh .img{
+    width:  35px;
+    border: 1px solid transparent ;
+    background-color: #2c3477;
+    border-radius: 17.5px;
+    text-align: center;
+    margin-bottom: 30px;
+   }
+   .seventh p{
+    color: rgb(119, 119, 119);
+    font-size :15px;
+    font-weight: 400;
+    line-height :27.9px;
+    text-align: center;
+    padding-top: 20px;
+    margin:0;
+   }
+   #logo{
+    width: 364px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+   }
+   .icons{
+  
+    margin-top: 10px;
+    /* padding-bottom: 30px; */
+   }
+
+
+
+  </style>
+</head>
+<body>
+    <!--nav bar start-->
+
+    <div class="nav">
+      <div class="container">
+       <div class="nav-logo">
+           <img src="images/logo-removebg-preview.png" alt="logo">
+       </div>
+       <div class="nav-links">
+           <ul>
+               <li><a href="client.html">Home</a></li>
+               <li><a href="Notifications.html">Notifications</a></li>
+              
+               <li><a href="index.html">Sign Out
+
+               </a></li>
+
+           </ul>
+
+       </div>
+       <div class="clr"></div>
+      </div>
+
+   </div>
+    
+  <!--end  nav bar-->  
+  <div class="card-container">
+    <div class="card">
+      <h2 class="card-header">Credit Card</h2>
+      <div>
+      <img src="images/blackcredit.png" alt="Credit Card" class="card-image">
+      </div>
+    
+      <div class="benefits">
+        <ul>
+          <li>Flexible spending limits</li>
+          <li>Reward points on purchases</li>
+          <li>EMV chip technology for enhanced security</li>
+        </ul>
+      </div>
+      <a href="applyforcreditcard.html" class="card-button">Apply Now</a>
+    </div>
+  
+    <div class="card">
+      <h2 class="card-header">Debit Card</h2>
+      <div>
+      <img src="images/bluecredit.png" alt="Prepaid Card" class="card-image">
+    </div>
+   
+   <div class="benefits">
+        <ul>
+          <li>Access to funds in your bank account</li>
+          <li>No risk of accumulating debt</li>
+          <li>Wide acceptance for purchases and ATM withdrawals</li>
+        </ul>
+      </div>
+      <a href="applyforcreditcard.html" class="card-button">Apply Now</a>
+    </div>
+  
+    <div class="card">
+      <h2 class="card-header">Prepaid Card</h2>
+    <div>
+      <img src="images/pinkcredit.png" alt="Prepaid Card" class="card-image">
+    </div>
+ 
+      <div class="benefits">
+        <ul>
+          <li>Control over spending with preloaded funds</li>
+          <!-- <li>No credit check or bank account required</li> -->
+          <li>Secure online shopping</li>
+        </ul>
+      </div>
+      <a href="applyforcreditcard.html" class="card-button">Apply Now</a>
+    </div>
+
+  </div>
+  <!-- 
+footer -->
+<div class="seventh">
+    <!-- <img id="logo" src="images/logo-removebg-preview.png" alt="logo"> -->
+    <p> Copyright 2017. All rights reserved.</p>
+    <div class="icons">
+        <img class="img" src="images/Icons/facebook.png" alt="facebook icon">
+        <img class="img" src="images/Icons/google.png" alt="google icon">
+        <img class="img" src="images/Icons/linkedin.png" alt="linkedin icon">
+        <img class="img" src="images/Icons/twitter.png" alt="twitter icon">
+    </div>
+    </div>
+  
+<script>
+   // Add event listeners to the buttons
+   // var buttons = document.getElementsByClassName("card-button");
+    //for (var i = 0; i < buttons.length; i++) {
+      //buttons[i].addEventListener("click", toggleBenefits);
+    //}
+    
+    // Toggle the display of benefits when the button is clicked
+    //function toggleBenefits() {
+      //var benefits = this.parentElement.getElementsByClassName("benefits")[0];
+      //benefits.style.display = (benefits.style.display === "none") ? "block" : "none";
+    //} 
+
+    document.addEventListener("DOMContentLoaded", function() {
+        window.addEventListener("scroll", function() {
+          var navLinks = document.querySelectorAll(".nav-links ul li a");
+          for (var i = 0; i < navLinks.length; i++) {
+            navLinks[i].classList.toggle("scrolled", window.scrollY > 0);
+          }
+        });
+      
+        window.addEventListener("scroll", function() {
+          var nav = document.querySelector(".nav");
+          nav.classList.toggle("scrolled", window.scrollY > 0);
+        });
+      
+        var slideCount = document.querySelectorAll(".slide").length; // Total number of slides
+        var visibleSlides = 4; // Number of slides visible at a time
+        var slideWidth = document.querySelector(".slide").offsetWidth; // Width of a single slide including margin
+        var containerWidth = visibleSlides * slideWidth; // Total width of visible slides
+        var currentPosition = 0; // Current position of the slide container
+      
+        document.querySelector(".slides").style.width = containerWidth + "px"; });
+
+  </script> 
+</body>
+</html
